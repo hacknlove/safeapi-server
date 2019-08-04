@@ -1,0 +1,8 @@
+.git
+.gitignore
+.npm
+node_modules
+package-lock.json
+README.md
+.eslintrc.json
+test
