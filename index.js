@@ -54,7 +54,7 @@ function parseJWT (req, res, next) {
 }
 
 function checkAlgorithm (req, res, next) {
-  if (config.allowedAlgorithms.includes(req.safeApiJwt.header.algorithm)) {
+  if (config.allowedAlgorithms.includes(req.safeApiJwt.header.alg)) {
     req.safeApiJwt = req.safeApiJwt.payload
     return next()
   }
