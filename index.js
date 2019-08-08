@@ -94,7 +94,7 @@ function checkSub (req, res, next) {
   return res.authError('InvalidSignature', 'hash')
 }
 
-async function getPublicKey (req, res, next) {
+function getPublicKey (req, res, next) {
   config.getPublicKey(req, res, next)
 }
 
