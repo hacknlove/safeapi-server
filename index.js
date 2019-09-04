@@ -143,12 +143,12 @@ function checkToken (token, request) {
     const res = {
       authError: reject
     }
-    function next (params) {
+    function next () {
       const step = steps.unshift()
       step(req, res, next)
     }
+    next()
   })
-
 }
 
 module.exports = [
