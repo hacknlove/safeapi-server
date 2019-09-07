@@ -20,7 +20,7 @@ var config = {
 }
 
 function authError (req, res, next) {
-  res.authError = res.authError || function (error, info) { res.json({ error, info }) }
+  res.authError = res.authError || function (error, info) { res.json({ error, info, authError: true }) }
   next()
 }
 
